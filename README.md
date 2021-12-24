@@ -3,3 +3,4 @@
 API na nuvem > https://sds2-jonathan.herokuapp.com/api/seller/
 # TECH UTILIZADAS.
 ## Lombok > Framework que reduz a verbosidade do código, utilizei nesta aplicação para geração de getters/setter e construtores.
+## RestTemplate > Para comunicação entre API
