@@ -1,22 +1,40 @@
 package com.consumer.dto;
 
-import javax.persistence.Entity;
+import java.io.Serializable;
 
-import com.consumer.entities.Seller;
+public class SellerDTO implements Serializable {
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Entity
-public class SellerDTO {
-
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String name;
+
+	public SellerDTO() {
+		super();
+	}
+
+	public SellerDTO(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 }
